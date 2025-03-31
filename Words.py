@@ -4,11 +4,12 @@
 # если в ней есть латинская буква “a” или “o”, но нет букв “i” и “e”. Строка содержит только
 # латинские буквы в нижнем регистре.
 
-while True:
-    word = input()
-    if (('a' in word and 'o' in word) or (not 'i' in word and not 'e' in word)):
-        # При наличии латинских букв 'a' и 'o' выводится 'True'
-        print('True')
-    else:
-        # При наличии латинских букв 'i' и 'e' выводится 'False'
-        print('False')
+try:
+    while True:
+        word = input()
+        if (('a' in word or 'o' in word) and not 'i' in word and not 'e' in word):
+            print(True)
+        else:
+            print(False)
+except EOFError:
+    pass

@@ -7,7 +7,9 @@
 # тексте самое частое слово – единственное.
 
 import  string
+print(f"****Start of input***")
 line = input("")
+print(f"******End of input***")
 words = []
 current_word = ""
 for char in line:
@@ -32,9 +34,7 @@ for word, count in word_counts.items():
         most_common_word = word
         most_common_count = count
 
-# print(f"****Start of input***")
-# print(f"******End of input***")
-# print(f"*****-----------*****")
-# print(f"***Start of Result***")
-print(f"{most_common_word}, {most_common_count}")
-# print(f"*****End of Result***")
+print(f"*****-----------*****")
+print(f"***Start of Result***")
+print(f"Самое повторяемое слово: {most_common_word}, Количество повторений: {most_common_count}")
+print(f"*****End of Result***")

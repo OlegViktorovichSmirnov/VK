@@ -10,11 +10,16 @@
 
 s = []
 try:
+    print(f"****Start of input***")
     for dataIn in iter(input, ''):
         s.append(max(map(int, dataIn .rstrip('\n').split())))
+    print(f"******End of input***")
 
 # Чтобы избежать ошибки EOFError вводим текст ниже
 except EOFError as e:
     print(end='')
 
+print(f"*****-----------*****")
+print(f"***Start of Result***")
 print(";".join(map(str, sorted(s[1:s[0]+1], reverse=True))))
+print(f"*****End of Result***")

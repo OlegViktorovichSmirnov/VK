@@ -11,7 +11,9 @@ import string
 def clean_word(word):
     return ''.join([char for char in word if char not in string.punctuation])
 
+print(f"****Start of input***")
 input_string = input("")
+print(f"******End of input***")
 
 # Разбивка строки на слова, очищение от символов, приведение к нижнему регистру
 words = input_string.split()
@@ -32,4 +34,7 @@ filtered_words = [word for word in accepted_words if accepted_words[word] > 2]
 filtered_words.sort()
 
 for word in filtered_words:
+    print(f"*****-----------*****")
+    print(f"***Start of Result***")
     print(word)
+    print(f"*****End of Result***")

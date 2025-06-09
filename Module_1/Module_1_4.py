@@ -13,4 +13,3 @@ try:
             print(False)
 except EOFError:
     pass
-

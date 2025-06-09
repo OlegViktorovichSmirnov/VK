@@ -7,6 +7,6 @@ city = ('Moscow')
 time = ('12:00')
 # Чтобы отделить текст ввода от текста результата выводим чёрточки.
 print("-----")
-print(f"{"Current location is: " +city, "and time is "+ time}")
+print("Current location is: " +city, "and time is: " + time)
 # Чтобы отделить текст результата от системного текста о наличии\отсутствии ошибок выводим чёрточки.
 print("-----")
